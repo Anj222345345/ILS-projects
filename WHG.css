@@ -1,0 +1,362 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: relative; /* Add this to establish a stacking context */
+    z-index: 2; /* Add a higher z-index */
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo2 {
+    width: 75px;
+    height: 75px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: black;
+    font-weight:normal;
+    text-decoration: none;
+    padding: 15px;
+    transition: ease-out 0.3s;
+}
+
+.active {
+    background-color: #fb2473;
+}
+
+.active:hover {
+    background-color: #f0c449;
+}
+
+.h:hover {
+    background-color: #f0c449;
+}
+
+.user-icon {
+    transition: ease-out 0.3s;
+}
+.user-icon:hover {
+    background-color: #f0c449;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dp:hover {
+    text-decoration: underline;
+    color: #26b2f4;
+}
+.dropdown-link {
+    display: none;
+    position: absolute;
+    background-color: #fb2473;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(26, 26, 26, 0.438);
+}
+
+.dropdown:hover .dropdown-link {
+    display: block;
+}
+
+.dropdown-link a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input.search {
+    width: 260px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: block;
+    padding: 9px 40px 9px 20px;
+    color: gray;
+}
+
+.fas.fa-search {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.Welcome {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.459)), url(images/pexels-lagos-food-bank-initiative-9090746.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    white-space: pre;
+}
+
+.text-content {
+    position: absolute;
+    top: 45%;
+    left: 150px;
+    transform: translateY(-50%);
+}
+
+.text-content h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.text-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+
+.Da {
+    position: relative;
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    width: 300px;
+    text-decoration: none;
+    background-color: #fb2473;
+    box-shadow: inset 15px 0 0 0 #f0c449;
+    transition: ease-out 0.3s;
+}
+
+.Da:hover {
+    box-shadow: inset 350px 0 0 0 #f0c449;
+}
+  
+.fa-solid fa-arrow-right {
+    color: black;
+}
+
+.warm {
+    color: #fb2473;
+}
+
+.hearted {
+    color: #26b2f4;
+}
+
+.givers {
+    color: #f0c449;
+}
+
+.Mission {
+    background-color: white;
+}
+
+.Mission h1 {
+    margin-left: 150px;
+}
+
+.Mission p {
+    margin-left: 150px;
+}
+
+.Mb {
+    position: relative;
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 11px;
+    width: 200px;
+    left: 140px;
+    background-color: #fb2473;
+    box-shadow: inset 15px 0 0 0 #f0c449;
+    transition: ease-out 0.3s;
+}
+
+.Mb:hover {
+    box-shadow: inset 250px 0 0 0 #f0c449;
+}
+
+#stories {
+    margin-top: 40px;
+}
+.stories1, .stories2, .stories3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.stories1 {
+    background-color: #fb2473;
+}
+.stories2 {
+    background-color: #f0c449;
+}
+.stories3 {
+    background-color: #26b2f4;
+}
+.img1 {
+    width: 50%;
+    height: 400px;
+}
+
+.text1{
+    padding-bottom: 100px;
+    margin-left: 20px; 
+    width: 50%;
+}
+
+.img2 {
+    width: 50%;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.text2 {
+    padding-bottom: 100px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.stories1 button {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    width: 200px;
+    background-color: #f0c449;
+    border: none;
+    box-shadow: inset 15px 0 0 0 white;
+    transition: ease-out 0.3s;
+    position: absolute;
+    margin-top: 200px; 
+    left: 700px; 
+}
+
+.stories2 button {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    width: 200px;
+    background-color: #fb2473;
+    border: none;
+    box-shadow: inset 15px 0 0 0 #26b2f4;
+    transition: ease-out 0.3s;
+    position: absolute;
+    margin-top: 200px; 
+    left: 10px;
+}
+
+.stories3 button {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    width: 200px;
+    background-color: #fb2473;
+    border: none;
+    box-shadow: inset 15px 0 0 0 #f0c449;
+    transition: ease-out 0.3s;
+    position: absolute;
+    margin-top: 200px; 
+    left: 700px; 
+}
+
+.activea:hover {
+    box-shadow: inset 350px 0 0 0 white;
+}
+
+.activeb:hover {
+    box-shadow: inset 350px 0 0 0 #26b2f4;
+}
+
+.activec:hover {
+    box-shadow: inset 350px 0 0 0 #f0c449;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 390px;
+}
+
+.social-icons a i {
+    color: #fb2473;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: transform 1s ease-in-out;
+}
+
+.social-icons a:hover i {
+    color: #f0c449;
+    transform: rotate(360deg);
+}
+
+.footer-info p {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.logos {
+    display: flex;
+    align-items: center; 
+}
+
+.footer-logo {
+    max-width: 60%; 
+    max-height: 60%; 
+    margin-right: 5px; 
+}
+
+.footer p:hover {
+    text-decoration: underline;
+    color: #26b2f4;
+}
+
